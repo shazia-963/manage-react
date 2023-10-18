@@ -1,81 +1,52 @@
 {
   "Employee": [
     {
-      "id": 1,
-      "name": "Ansar",
-      "email": "ansar.isro@gmail.com",
-      "city": "Amristar",
-      "mobile": "0457891230"
-    },
-    {
-      "id": 2,
-      "name": "Ansar Ali",
-      "email": "ansar.isro@gmail.com",
-      "city": "Kadapa",
-      "mobile": "96985874112"
-    },
-    {
       "id": 3,
       "name": "Banu",
-      "email": "qwe@gmail.com",
       "city": "Cochin",
       "mobile": "09874563210"
     },
     {
-      "id": 4,
-      "name": "Anjum",
-      "email": "qwe@gmail.com",
-      "city": "Hyderbad",
-      "mobile": "04567891230"
-    },
-    {
       "id": 5,
       "name": "Faheem",
-      "email": "qwe@gmail.com",
       "city": "Delhi",
       "mobile": "04567891230"
     },
     {
-      "id": 6,
-      "name": "Sarfaraz",
-      "email": "ansar.isro@gmail.com",
-      "city": "Bengaluru",
-      "mobile": "1234567899"
-    },
-    {
       "id": 7,
       "name": "Nazia",
-      "email": "qwe@gmail.com",
       "city": "Hyderbad",
       "mobile": "0987456321"
     },
     {
       "id": 8,
       "name": "Taniya",
-      "email": "xyz@gmail.com",
       "city": "Manugur",
       "mobile": "0784512369"
     },
     {
       "id": 10,
       "name": "Tasmiya",
-      "email": "qwe@gmail.com",
       "city": "Vijayawada",
       "mobile": "07417417410"
     },
     {
-      "id": 11,
-      "name": "qwerty",
-      "email": "qwe@gmail.com",
-      "city": "paris",
-      "mobile": "101203010230"
-    },
-    {
       "id": 12,
       "name": "ansar",
-      "email": "ansar.isro@gmail.com",
       "city": "bengaluru",
       "mobile": "04567891230"
+    },
+    {
+      "id": 13,
+      "name": "raghav",
+      "city": "bengaluru",
+      "mobile": "04567891230"
+    },
+    {
+      "id": 14,
+      "name": "AnsarAli",
+      "city": "Kadapa",
+      "mobile": "07894561230"
     }
   ]
 }

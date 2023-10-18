@@ -2,10 +2,9 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 
-function EmpForm(){
+function EmpForm1(){
   const [id, setId] = useState("")
   const [name, setName] = useState("")
-  const [email,setEmail] = useState("")
   const [city, setCity] = useState("")
   const [mobile, setMobile] = useState("")
   const navigate = useNavigate()
@@ -13,9 +12,9 @@ function EmpForm(){
   
   const sendData = (e) => {
     e.preventDefault()
-    const data = { id,name,email, city, mobile }
-    fetch("http://localhost:3000/Employee",{
-      // fetch("http://localhost:3006/Employee",{
+    const data = { id, name, city, mobile }
+    // fetch("http://localhost:3000/Employee",{
+      fetch("https://kinara-rest-api.onrender.com/Employee",{
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify(data)
@@ -41,10 +40,6 @@ function EmpForm(){
           <input value={name} type="text" onChange={e => setName(e.target.value)} className="form-control" id="exampleInputPassword1" />
         </div>
         <div className="mb-3">
-          <label className="form-label">Email</label>
-          <input value={email} type="text" onChange={e => setEmail(e.target.value)} className="form-control" id="exampleInputPassword1" />
-        </div>
-        <div className="mb-3">
           <label className="form-label">City</label>
           <input value={city}
             type="text" onChange={e => setCity(e.target.value)} className="form-control" id="exampleInputPassword1" />
@@ -55,10 +50,10 @@ function EmpForm(){
         </div>
 
         <button type="submit" className="btn btn-primary">Submit</button>
-        <Link to="/emplist" className="btn btn-danger">Back</Link>
+        <Link to="/emplist1" className="btn btn-danger">Back</Link>
 
       </form>
     </div>
   )
 }
-export default EmpForm;
+export default EmpForm1;
