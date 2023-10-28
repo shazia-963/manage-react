@@ -13,10 +13,10 @@ function EmpForm1(){
   const sendData = (e) => {
     e.preventDefault()
     const data = { id, name, city, mobile }
-    // fetch("http://localhost:3000/Employee",{
-      fetch("https://kinara-rest-api.onrender.com/Employee",{
+     //fetch("http://localhost:3000/Employee",{
+      fetch("https://json-rest-api-eryu.onrender.com/Employee",{
       method: "POST",
-      headers: { "Content-type": "application/json" },
+      headers: {"Content-type": "application/json"},
       body: JSON.stringify(data)
     })
       .then(() => {

@@ -2,15 +2,16 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 
 function EmpEdit1() {
-  const [id, setId] = useState("")
-  const [name, setName] = useState("")
-  const [city, setCity] = useState("")
-  const [mobile, setMobile] = useState("")
-  const navigate = useNavigate()
-  const { empid } = useParams()
+  const [id,setId]=useState("")
+  const [name,setName]=useState("")
+  const [city,setCity]=useState("")
+  const [mobile,setMobile]=useState("")
+  const navigate=useNavigate()
+  const {empid}=useParams()
 
-  useEffect(() => {
-   fetch("http://localhost:3000/Employee/"+empid)
+  useEffect(()=> {
+   //fetch("http://localhost:3000/Employee/"+empid)
+   fetch("http://kinara-rest-api.onrender.com/Employee/"+empid)
       .then((res) => {
         return res.json()
       })
@@ -21,16 +22,12 @@ function EmpEdit1() {
         setMobile(resp.mobile)
       })
   }, )
-
-
-
-  const sendData = (e) => {
+const sendData = (e) => {
     e.preventDefault()
-    const data = { id, name, city, mobile }
+    const data = {id,name,city,mobile}
       // fetch("http://localhost:3000/Employee/"+empid,{
-         fetch("http://kinara-rest-api.onrender.com/Employee/"+empid,{
-
-      method: "PUT",
+      fetch("http://kinara-rest-api.onrender.com/Employee/"+empid,{
+      method:"PUT",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify(data)
     })
@@ -69,9 +66,7 @@ function EmpEdit1() {
         <Link to="/" className="btn btn-danger">Back</Link>
 
       </form>
-      
-     
-    </div>
+      </div>
   )
 }
 export default EmpEdit1;

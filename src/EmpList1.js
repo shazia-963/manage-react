@@ -15,7 +15,7 @@ function EmpList1(){
     const option=["name","city","mobile"]
     const [sort,setSort]=useState("")
     useEffect(()=>{
-        fetch(`https://kinara-rest-api.onrender.com/Employee`)
+        fetch(`https://json-rest-api-eryu.onrender.com/Employee`)
         //fetch(`http://localhost:3000/Employee?_start=${0}&_end=${11}`)
        .then((res)=>{
                 return res.json()
@@ -29,7 +29,7 @@ function EmpList1(){
         const DeleteData=(id)=>{
         if(window.confirm("Do you want to delete it ?")){
         //fetch("http://localhost:3000/Employee/"+id,{
-            fetch("https://kinara-rest-api.onrender.com/Employee/"+id,{
+            fetch("https://json-rest-api-eryu.onrender.com/Employee/"+id,{
             method:"DELETE"
         })
         .then((s)=>{
@@ -60,18 +60,18 @@ function EmpList1(){
     const searchData=async (e)=>{
         e.preventDefault()
         //return await axios.get(`http://localhost:3000/Employee?q=${value}`)
-        return await axios.get('https://kinara-rest-api.onrender.com/Employee?q=${value}')
+        return await axios.get(`https://json-rest-api-eryu.onrender.com/Employee?q=${value}`)
         .then((res)=>{
           console.log(res)
           setData(res.data)
-        //setValue("http://localhost:3000/Employee")
-        setValue("https://kinara-rest-api.onrender.com/Employee")
+       // setValue("http://localhost:3000/Employee")
+        setValue("https://json-rest-api-eryu.onrender.com/Employee")
         })
-        }
+    }
     const loadData=(e)=>{
         e.preventDefault()
         //fetch("http://localhost:3000/Employee")
-        fetch("https://kinara-rest-api.onrender.com/Employee")
+        fetch("https://json-rest-api-eryu.onrender.com/Employee")
             .then((res)=>{
                 return res.json()
             })
