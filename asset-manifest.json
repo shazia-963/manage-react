@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/shazia-963/manage-react/static/css/main.4de3a691.css",
-    "main.js": "/shazia-963/manage-react/static/js/main.01d85f9f.js",
-    "index.html": "/shazia-963/manage-react/index.html",
-    "main.4de3a691.css.map": "/shazia-963/manage-react/static/css/main.4de3a691.css.map",
-    "main.01d85f9f.js.map": "/shazia-963/manage-react/static/js/main.01d85f9f.js.map"
+    "main.css": "/shazia-963/data-react/static/css/main.4de3a691.css",
+    "main.js": "/shazia-963/data-react/static/js/main.394551cf.js",
+    "index.html": "/shazia-963/data-react/index.html",
+    "main.4de3a691.css.map": "/shazia-963/data-react/static/css/main.4de3a691.css.map",
+    "main.394551cf.js.map": "/shazia-963/data-react/static/js/main.394551cf.js.map"
   },
   "entrypoints": [
     "static/css/main.4de3a691.css",
-    "static/js/main.01d85f9f.js"
+    "static/js/main.394551cf.js"
   ]
 }
